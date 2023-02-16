@@ -78,6 +78,8 @@ Alpine.start()
 ```
 
 ### Shopify
+Pull the latest dawn theme form your store
+
 Add the files the next lines of code into ```layout/theme.liquid``` just above ```</head>```
 
 ```
