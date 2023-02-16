@@ -3,12 +3,3 @@
 .DS_Store?
 ._*
 node_modules
-
-# Shopify ignore
-assets/
-config/
-layout/
-locales/
-sections/
-snippets/
-templates/
