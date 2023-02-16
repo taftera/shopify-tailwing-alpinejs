@@ -10,6 +10,7 @@ module.exports = {
     './templates/*.json',
     './templates/customers/*.liquid'
   ],
+  prefix: 'tw-',
   theme: {
     extend: {},
   },

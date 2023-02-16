@@ -59,6 +59,12 @@ Adding the tailwind imports to the ```src/scss/app.scss```
 @tailwind components;
 @tailwind utilities;
 ```
+
+Before deploying we can minify the css
+```
+$ npx tailwindcss -o assets/app.css --minify
+```
+
 ### Alpine JS
 
 ```
@@ -69,4 +75,13 @@ Adding the Alpine imports to the ```src/js/app.js```
 import Alpine from 'alpinejs'
 window.Alpine = Alpine
 Alpine.start()
+```
+
+### Shopify
+Add the files the next lines of code into ```layout/theme.liquid``` just above ```</head>```
+
+```
+{% comment %} App CSS Configs {% endcomment %}
+{{ 'app.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'app.js' | asset_url }}" async></script>
 ```

@@ -1,0 +1,9 @@
+.gitignore
+mix-manifest.json
+package-lock.json
+package.json
+README.md
+tailwind.config.js
+webpack.min.js
+# Tailwind Alpine Imports
+src/
